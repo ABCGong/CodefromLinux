@@ -5,7 +5,7 @@ int main(){
 	for(int i=0;i<10;i++){
 		int n;
 		cin>>n;
-		arry[n]++;
+		arry[i]+=n;
 	}
      for(int i=1;i<10;i++){
      	if(arry[i]!=0){
