@@ -4,6 +4,7 @@ using namespace std;
 int main()  
 {  
   string str1,str2;  
+  while(cin>>str1>>str2){
   
   int a[2000]={0};
   int b[2000]={0};
@@ -11,7 +12,7 @@ int main()
   
   int i;  
   
-  cin>>str1>>str2;   
+  
   
   a[0]=str1.length();  //取得字符串的长度  
   
@@ -37,6 +38,9 @@ int main()
   while((a[len]==0)&&(len>1)) len--;  
   
   for(i=len;i>=1;i--)  cout<<a[i];  
+  cout<<endl;
+  }
+  
   return 0;   
 }  
    /*思路:先将string转化为int,存在数组中,选择位数大的来限定,每一位数组相加,再有下一位来+上>10的部分,<10的部分就放在本位,最后要删除前导0,避免多输出*/
