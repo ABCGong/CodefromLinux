@@ -22,6 +22,7 @@
          for (int j = 0; j < (sl - c) / 2; j++)cout << ' '; 
          for (int j = 0; j < c; j++) cout << w;
          if (flag) c -= 2; else c += 2;
+         //»»ÐÐ 
          if (c == 1)flag = 0;
          cout <<  endl;
      }
